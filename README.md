@@ -10,9 +10,10 @@ This was created as part of [The Odin Project](https://www.theodinproject.com/)'
 
 ## Images Credits
 
-- _"Woman in Black and White Polka Dot Shirt Using MacBook"_ by Anna Shvets on [Pexels](https://www.pexels.com/photo/woman-in-black-and-white-polka-dot-shirt-using-macbook-3987000/).
-- _"Woman in White Shirt Using Silver MacBook"_ by Anna Shvets on [Pexels](https://www.pexels.com/photo/woman-in-white-shirt-using-silver-macbook-3986984/).
+- _"Man in Blue Dress Shirt Sitting on Black Leather Armchair Using Macbook"_ by Polina Zimmerman on [Pexels](https://www.pexels.com/photo/man-in-blue-dress-shirt-sitting-on-black-leather-armchair-using-macbook-3747108/).
+- _"Man Using Laptop"_ by Polina Zimmerman on [Pexels](https://www.pexels.com/photo/man-using-laptop-3747104/).
+- _"Man in Blue Dress Shirt Using Laptop Computer"_ by Polina Zimmerman on [Pexels](https://www.pexels.com/photo/man-in-blue-dress-shirt-using-laptop-computer-3747119/)
 
-Anna Shvets' [Pexels Profile](https://www.pexels.com/@shvetsa/) | [Instagram](https://www.instagram.com/shvets.ai)  
+Polina Zimmerman's [Pexels Profile](https://www.pexels.com/@polina-zimmerman/) | [Instagram](https://www.instagram.com/namesofvenus)  
 Licensed under [Pexels License](https://www.pexels.com/license/). Visit [Pexels](https://www.pexels.com/) for more free photos.
 
