@@ -22,25 +22,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
 }
 
-h1 {
-    font-size: 5rem;
-}
 
-h2 {
-    font-size: 4rem;
-}
-
-h3 {
-    font-size: 3rem;
-}
-
-h4 {
-    font-size: 2rem;
-}
-
-p, i {
-    font-size: 1.5rem;
-}
 
 /* Hero Section */
 .hero-content {    
@@ -154,13 +136,32 @@ footer {
 
 
 /* II. Mobiles */
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     /* Mpst of the things are stacked on top of each other */
     body * {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 4rem;
+    }
+    
+    h3 {
+        font-size: 3rem;
+    }
+    
+    h4 {
+        font-size: 2rem;
+    }
+    
+    p, i {
+        font-size: 1.5rem;
     }
     
     .about-me {
@@ -209,6 +210,105 @@ footer {
 }
 
 /* Tablets */
-@media (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    p, i {
+        font-size: 1.1rem;
+    }
+
+    .social-icons i {
+        font-size: 1.5rem;
+    }
+        
+
+    main {
+        padding: 5rem
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem; /* Adjust the gap between the grid items as needed */
+    }
+
+    .project-screenshot {
+        aspect-ratio: 1 / 1;
+        /*padding: 2rem;*/
+        width: 100%;
+        /*height: auto;*/
+        
+    }
+    .project-information {
+        padding: 1.5rem 1.5rem 5rem 1.5rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        padding: 5rem;
+        gap: 3rem;        
+    }
+
+    .contact-info {
+        flex: 1;
+        padding: 1rem;
+        flex-shrink: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    .contact-img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 1;
+    }
+
+    .contact-img img {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-self: flex-start;
+    }
     
+}
+
+@media (min-width: 1025px) {
+
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        padding: 10rem 7rem 10rem 7rem;
+        gap: 5rem;        
+    }
+
+
 }
