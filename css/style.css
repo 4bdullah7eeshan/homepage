@@ -26,16 +26,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .hero {    
-    background: #008db8;
-    /*clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
-    z-index: 1;
-    position: absolute;*/
+    background: #282b1d;/*#008db8;*/
 }
 
-/*
-.hero-content {
-    padding: 20px;
+/*.hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%);
+    z-index: -9999;
+    position: relative;
 }*/
+
+
+
 
 
 /* My Work Section */
@@ -75,12 +76,15 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 0.5rem;
 }
+
+
 
 
 /* Footer Section */
 footer {
-    background-color: #007EA7;
+    background-color: #282b1d;/*#007EA7*/;
     color: white;
    
 }
@@ -218,12 +222,64 @@ footer {
         font-size: 3rem;
     }
 
-    p, i {
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    p {
         font-size: 1.1rem;
     }
 
     .social-icons i {
         font-size: 1.5rem;
+    }
+
+    .hero-content {
+        position: relative;
+    float: left;
+    width: 40vw;
+    margin: -3rem 1rem 1rem -3rem;
+    
+    }
+    .about-me {
+        width: 70vw;
+        padding: 1rem;
+    }
+    .about-me h2 {
+        
+        font-size: 3rem;
+    text-align: center;
+    
+    }
+    .about-me p {
+        font-size: 2rem;
+        margin-left: 1rem;
+    
+    }
+
+
+
+    .about-me {
+        background-color: #fff;
+    }
+
+    .hero {
+        padding: 5rem;
+    }
+
+
+
+    
+    
+
+
+    .hero-content img {
+        width: 100%;
+        height: auto;
     }
         
 
