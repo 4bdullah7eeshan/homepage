@@ -2,7 +2,7 @@
 
 ## About
 
-A responsive homepage designed to adapt seamlessly on a desktop, a tablet, and a mobile. 
+[Homepage](https://4bdullah7eeshan.github.io/homepage/) is a prototypical homepage website designed responsively so that it adapts seamlessly on a desktop, a tablet, and a mobile. 
 
 ## Background
 
