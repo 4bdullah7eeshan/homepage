@@ -1,6 +1,6 @@
 /* I. Common CSS for all devices */
 
-/* Duh! */
+/* General Resets */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +11,8 @@ img {
     width: 100%;
     height: auto;
 }
+
+/*Fonts*/
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -23,32 +25,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 /* Hero Section */
 .hero {    
     background: #282b1d;/*#008db8;*/
 }
 
-/*.hero {
+/* Figure out later, that stripped thingy in the hero section
+.hero {
     clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%);
     z-index: -9999;
     position: relative;
-}*/
+}
+*/
 
+/* Name inside the image */
 
+.hero-content {
+    position: relative;
+    display: inline-block; 
+}
 
+.hero-content img {
+    display: block; 
+    width: 100%; 
+    height: auto;
+}
 
+.hero-text {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%); 
+    color: white; 
+    padding: 10px;
+    width: 100%; 
+    text-align: center; 
+}
 
 /* My Work Section */
 main {
     background: #ffffff;
-    /*clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);*/
 }
 
 .project-grid {
     width: 100%;
 }
-
 
 .project-card {
     border: 1px solid #ddd;
@@ -79,14 +100,17 @@ main {
     gap: 0.5rem;
 }
 
+.project-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 
-
+}
 
 /* Footer Section */
 footer {
     background-color: #282b1d;/*#007EA7*/;
-    color: white;
-   
+    color: white;   
 }
 
 .phone-number,
@@ -106,37 +130,6 @@ footer {
     align-items: center;
 }
 
-/* Name inside the image */
-
-.hero-content {
-    position: relative;
-    display: inline-block; 
-}
-
-.hero-content img {
-    display: block; 
-    width: 100%; 
-    height: auto;
-}
-
-.hero-text {
-    position: absolute;
-    bottom: 1%;
-    left: 50%;
-    transform: translateX(-50%); 
-    color: white; 
-    padding: 10px;
-    width: 100%; 
-    text-align: center; 
-}
-
-.project-links {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-
-}
-
 .social-icons i {
     font-size: 3rem;
 }
@@ -144,13 +137,14 @@ footer {
 
 /* II. Mobiles */
 @media (max-width: 767px) {
-    /* Mpst of the things are stacked on top of each other */
+    /* Most of the things are stacked on top of each other */
     body * {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
     }
+
     h1 {
         font-size: 5rem;
     }
@@ -194,29 +188,32 @@ footer {
         aspect-ratio: 1 / 1;
         /*padding: 2rem;*/
         width: 100%;
-        /*height: auto;*/
-        
+        /*height: auto;*/   
     }
+
     .project-information {
         padding: 1.5rem 1.5rem 5rem 1.5rem;
     }
+
     .contact-info {
         padding: 2rem 1rem 5rem 1rem;
         gap: 1rem;
     }
+
     .contact-details {
         gap: 1.5rem;
     }
+
     .contact-info h2 {
         text-align: center;
     }
+
     .message {
         font-size: 2rem;
     }
-
 }
 
-/* Tablets */
+/* III. Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
     h2 {
         font-size: 3rem;
@@ -240,28 +237,25 @@ footer {
 
     .hero-content {
         position: relative;
-    float: left;
-    width: 40vw;
-    margin: -3rem 1rem 1rem -3rem;
-    
+        float: left;
+        width: 40vw;
+        margin: -3rem 1rem 1rem -3rem;
     }
+
     .about-me {
         width: 70vw;
         padding: 1rem;
     }
-    .about-me h2 {
-        
+
+    .about-me h2 {    
         font-size: 3rem;
-    text-align: center;
-    
+        text-align: center;
     }
+
     .about-me p {
         font-size: 2rem;
         margin-left: 1rem;
-    
     }
-
-
 
     .about-me {
         background-color: #fff;
@@ -271,18 +265,11 @@ footer {
         padding: 5rem;
     }
 
-
-
-    
-    
-
-
     .hero-content img {
         width: 100%;
         height: auto;
     }
         
-
     main {
         padding: 5rem
     }
@@ -290,7 +277,7 @@ footer {
     .project-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem; /* Adjust the gap between the grid items as needed */
+        gap: 1rem; 
     }
 
     .project-screenshot {
@@ -298,8 +285,8 @@ footer {
         /*padding: 2rem;*/
         width: 100%;
         /*height: auto;*/
-        
     }
+
     .project-information {
         padding: 1.5rem 1.5rem 5rem 1.5rem;
     }
@@ -355,6 +342,7 @@ footer {
     
 }
 
+/* IV. PCs */
 @media (min-width: 1025px) {
 
     h1 {
@@ -409,7 +397,6 @@ footer {
         gap: 2rem;
     }
 
-
     .about-me .social-icons {
         align-self: flex-end;
         display: flex;
@@ -436,27 +423,27 @@ footer {
 
     .project-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-        grid-template-rows: repeat(2, 1fr);    /* 2 rows */
-        gap: 20px; /* Adjust the gap between the grid items as needed */
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(2, 1fr);    
+        gap: 20px;
     }
+
     .project-screenshot {
         aspect-ratio: 1 / 1;
         /*padding: 2rem;*/
         width: 100%;
-        /*height: auto;*/
-        
+        /*height: auto;*/    
     }
+
     .project-information {
         padding: 1.5rem 1.5rem 5rem 1.5rem;
     }
+
     footer {
         padding: 5rem;
     }
 
-    
-    .contact-info {
-        
+    .contact-info {        
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -490,6 +477,4 @@ footer {
         gap: 1rem;
         align-self: flex-start;
     }
-
-
 }
